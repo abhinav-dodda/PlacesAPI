@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/validations.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+<link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<title>
+Places API
+</title>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="Weather.html">INDIAN RESTAURANTS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Weather.html">Current Weather</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+  <div class="jumbotron">
+  <div class="row vertical-center-row">
+  <strong>
+    <h1>Near By Places Google</h1>      
+    <p>Let's Query a Google Near By Places API</p>
+	</strong>
+  </div>
+  </div>
+  <div class="container fluid">
+    <button onclick="getMyNearByPlace()">Indian Restaurants Across globe</button>
+<input id="currentLocationTextBox" type="text">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Restaurant Name</th>
+      <th>Restaurant Address</th>
+      <th onclick= sortTable()>Restaurant Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+</div>
+</body>
+</html>
